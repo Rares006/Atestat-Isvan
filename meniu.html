@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantul San Martin - Tradiție și Gust Autentic</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span>Restaurantul San Martin</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#despre">Despre noi</a></li>
+                    <li><a href="#meniu">Meniu</a></li>
+                    <li><a href="#pizza">Pizza</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#cos" class="cart-icon">
+                            🛒
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu" id="meniu">
+        <div class="container">
+            <div class="menu-heading">
+                <h2 class="section-title">Meniul Nostru</h2>
+                <p>Descoperă selecția noastră de preparate tradiționale și internaționale</p>
+            </div>
+            
+            <!-- Categorii Meniu -->
+            <div class="menu-categories">
+                <ul class="menu-tabs">
+                    <li class="active" data-category="all">Toate</li>
+                    <li data-category="starters">Aperitive</li>
+                    <li data-category="soups">Supe și Ciorbe</li>
+                    <li data-category="main">Fel Principal</li>
+                    <li data-category="desserts">Deserturi</li>
+                    <li data-category="drinks">Băuturi</li>
+                </ul>
+            </div>
+            
+            <!-- Elementele din Meniu -->
+            <div class="menu-items">
+                <!-- Aperitive -->
+                <div class="menu-category" id="starters">
+                    <h3 class="category-title">Aperitive</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Bruschetta cu Roșii și Busuioc</h4>
+                                <span class="menu-item-price">22 lei</span>
+                            </div>
+                            <p class="menu-item-description">Felii de pâine rustică prăjită, cu topping de roșii cherry, busuioc proaspăt, usturoi și ulei de măsline extravirgin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Carpaccio de Vită</h4>
+                                <span class="menu-item-price">38 lei</span>
+                            </div>
+                            <p class="menu-item-description">Felii subțiri de mușchi de vită crud, cu rucola, parmezan, capere și ulei de măsline</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Platou Antipasti</h4>
+                                <span class="menu-item-price">65 lei</span>
+                            </div>
+                            <p class="menu-item-description">Selecție de brânzeturi fine, mezeluri italienești, măsline, ardei copți și bruschette (pentru 2 persoane)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Supe și Ciorbe -->
+                <div class="menu-category" id="soups">
+                    <h3 class="category-title">Supe și Ciorbe</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Supă de Roșii</h4>
+                                <span class="menu-item-price">24 lei</span>
+                            </div>
+                            <p class="menu-item-description">Supă cremă de roșii cu busuioc proaspăt și crutoane aromatizate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Ciorbă de Văcuță</h4>
+                                <span class="menu-item-price">28 lei</span>
+                            </div>
+                            <p class="menu-item-description">Ciorbă tradițională românească cu carne de vită, legume proaspete și smântână</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Minestrone</h4>
+                                <span class="menu-item-price">26 lei</span>
+                            </div>
+                            <p class="menu-item-description">Supă italiană densă cu legume de sezon, fasole și paste</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fel Principal -->
+                <div class="menu-category" id="main">
+                    <h3 class="category-title">Fel Principal</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Risotto cu Ciuperci Sălbatice</h4>
+                                <span class="menu-item-price">42 lei</span>
+                            </div>
+                            <p class="menu-item-description">Orez Arborio gătit cu ciuperci sălbatice, vin alb, parmezan și unt</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Mușchi de Vită cu Sos de Trufe</h4>
+                                <span class="menu-item-price">75 lei</span>
+                            </div>
+                            <p class="menu-item-description">Mușchi de vită gătit la temperatura dorită, servit cu sos de trufe negre și cartofi gratinați</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Spaghetti alla Carbonara</h4>
+                                <span class="menu-item-price">38 lei</span>
+                            </div>
+                            <p class="menu-item-description">Paste proaspete cu guanciale crocant, ou, pecorino roman și piper negru proaspăt măcinat</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Doradă la Cuptor</h4>
+                                <span class="menu-item-price">58 lei</span>
+                            </div>
+                            <p class="menu-item-description">Doradă întreagă coaptă la cuptor cu rozmarin, lămâie și usturoi, servită cu legume la grătar</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Pulpă de Rață Confit</h4>
+                                <span class="menu-item-price">62 lei</span>
+                            </div>
+                            <p class="menu-item-description">Pulpă de rață gătită lent în propria grăsime, servită cu piure de cartofi cu trufe și sos de vișine</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deserturi -->
+                <div class="menu-category" id="desserts">
+                    <h3 class="category-title">Deserturi</h3>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Tiramisu</h4>
+                                <span class="menu-item-price">28 lei</span>
+                            </div>
+                            <p class="menu-item-description">Desert italian clasic cu straturi de pișcoturi înmuiate în cafea, cremă de mascarpone și cacao</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Panna Cotta cu Fructe de Pădure</h4>
+                                <span class="menu-item-price">24 lei</span>
+                            </div>
+                            <p class="menu-item-description">Cremă fină de vanilie cu sos de fructe de pădure proaspete</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-title">
+                                <h4>Tort de Ciocolată cu Lava</h4>
+                                <span class="menu-item-price">32 lei</span>
+                            </div>
+                            <p class="menu-item-description">Tort cald de ciocolată cu interior moale, servit cu înghețată de vanilie și fructe proaspete</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Băuturi -->
+            <div class="menu-category" id="drinks">
+                <h3 class="category-title">Băuturi</h3>
+                
+                <div class="menu-item">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h4>Selecție de Vinuri</h4>
+                            <span class="menu-item-price">de la 22 lei/pahar</span>
+                        </div>
+                        <p class="menu-item-description">Întreabă ospătarul despre selecția noastră de vinuri roșii, albe și rose</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h4>Limonadă Făcută în Casă</h4>
+                            <span class="menu-item-price">18 lei</span>
+                        </div>
+                        <p class="menu-item-description">Limonadă proaspătă cu mentă, ghimbir sau fructe de pădure</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="menu-item-img" style="background-image: url('/api/placeholder/200/150')"></div>
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">
+                            <h4>Cocktailuri Signature</h4>
+                            <span class="menu-item-price">de la 32 lei</span>
+                        </div>
+                        <p class="menu-item-description">Colecție de cocktailuri unice create de barmanii noștri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Restaurantul San Martin</h3>
+                <p>Bucătărie autentică și pizza delicioasă într-o atmosferă prietenoasă.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Link-uri rapide</h3>
+                <ul>
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#despre">Despre noi</a></li>
+                    <li><a href="#meniu">Meniu</a></li>
+                    <li><a href="#pizza">Pizza</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicii</h3>
+                <ul>
+                    <li><a href="#">Livrare la domiciliu</a></li>
+                    <li><a href="#">Rezervări</a></li>
+                    <li><a href="#">Evenimente private</a></li>
+                    <li><a href="#">Catering</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Abonează-te</h3>
+                <p>Abonează-te la newsletter pentru a primi oferte speciale.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email-ul tău" class="form-control">
+                    </div>
+                    <button type="submit" class="btn">Abonează-te</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Restaurantul San Martin. Toate drepturile rezervate.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header și navigare */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #d62828;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #d62828;
+        }
+        
+        .cart-icon {
+            font-size: 20px;
+            position: relative;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #d62828;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }
+
+    .menu {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.menu-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Stiluri pentru tabs-urile de categorii */
+.menu-categories {
+    margin-bottom: 40px;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-tabs li {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu-tabs li.active, .menu-tabs li:hover {
+    background-color: #d62828;
+    color: white;
+}
+
+/* Stiluri pentru categoriile de meniu */
+.category-title {
+    font-size: 1.8rem;
+    margin: 30px 0 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.category-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #d62828;
+}
+
+/* Stiluri pentru elementele din meniu */
+.menu-item {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item-img {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-item-content {
+    padding: 15px;
+    flex: 1;
+}
+
+.menu-item-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.menu-item-title h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.menu-item-price {
+    font-weight: 700;
+    color: #d62828;
+    font-size: 1.1rem;
+}
+
+.menu-item-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Stiluri pentru afișarea pe ecrane mici */
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+    }
+    
+    .menu-item-img {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .menu-tabs li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Stiluri pentru animații de filtrare */
+.menu-category {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-category.hidden {
+    display: none;
+}
+footer {
+            background-color: #333;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-col h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-col ul li a:hover {
+            color: #d62828;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background-color: #d62828;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: white;
+            color: #d62828;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        
+        /* Media queries */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+            
+            .nav-links {
+                margin-top: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about {
+                flex-direction: column;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1200/800');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            background-color: #d62828;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background-color: #b51d1d;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+</style>
+<script>// JavaScript pentru funcționalitatea de filtrare a meniului
+    document.addEventListener('DOMContentLoaded', function() {
+        // Selectăm toate tab-urile de categorie
+        const categoryTabs = document.querySelectorAll('.menu-tabs li');
+        
+        // Adăugăm event listener pentru fiecare tab
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Eliminăm clasa 'active' de la toate tab-urile
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                
+                // Adăugăm clasa 'active' la tab-ul curent
+                this.classList.add('active');
+                
+                // Obținem categoria selectată
+                const selectedCategory = this.getAttribute('data-category');
+                
+                // Selectăm toate categoriile de meniu
+                const menuCategories = document.querySelectorAll('.menu-category');
+                
+                // Filtrăm elementele în funcție de categoria selectată
+                menuCategories.forEach(category => {
+                    if (selectedCategory === 'all' || category.id === selectedCategory) {
+                        category.classList.remove('hidden');
+                    } else {
+                        category.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+    
+    </script>

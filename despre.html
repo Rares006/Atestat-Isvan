@@ -15,13 +15,13 @@
                     <span>Restaurantul San Martin</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#acasa">Acasă</a></li>
-                    <li><a href="#despre">Despre noi</a></li>
-                    <li><a href="#meniu">Meniu</a></li>
-                    <li><a href="#pizza">Pizza</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre noi</a></li>
+                    <li><a href="meniu.html">Meniu</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li>
-                        <a href="#cos" class="cart-icon">
+                        <a href="cos.html" class="cart-icon">
                             🛒
                             <span class="cart-count">0</span>
                         </a>
@@ -31,15 +31,14 @@
         </div>
     </header>
 
-    <section class="about" id="despre">
+    <section class="hero" id="despre" >
         <div class="container">
-            <div class="about-img"></div>
+            <div class="about-img"style="background-image: url('poze/restaurant2.jpg')"></div>
             <div class="about-content">
                 <h2 class="section-title">Despre San Martin</h2>
                 <p>Restaurantul San Martin vă întâmpină cu mândrie din anul 2010, oferind clienților săi o experiență culinară de neuitat în inima orașului.</p>
                 <p>Meniul nostru combină rețete tradiționale cu influențe moderne, punând accent pe ingrediente proaspete și de calitate. Fiecare preparat este gătit cu pasiune și atenție la detalii, pentru a satisface cele mai rafinate gusturi.</p>
                 <p>Ne mândrim cu pizza noastră autentică, preparată în cuptor cu lemne, care a devenit rapid preferata clienților fideli. Alături de specialitățile casei, oferim o selecție bogată de vinuri fine și deserturi delicioase.</p>
-                <a href="#meniu" class="btn">Descoperă Meniul</a>
             </div>
         </div>
     </section>
@@ -429,3 +428,25 @@
             font-size: 1rem;
         }
         </style>
+        <script>
+    
+            // Funcția pentru actualizarea numărului de produse din coș
+            function updateCartCount() {
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const cartCount = document.querySelector('.cart-count');
+                
+                // Calculăm numărul total de produse (suma cantităților)
+                const itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+                
+                // Actualizăm afișarea
+                if (cartCount) {
+                    cartCount.textContent = itemCount;
+                }
+            }
+            
+            
+            // Inițializăm numărul de produse din coș când se încarcă pagina
+            document.addEventListener('DOMContentLoaded', function() {
+                updateCartCount();
+                
+            });</script>

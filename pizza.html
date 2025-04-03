@@ -15,13 +15,13 @@
                     <span>Restaurantul San Martin</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#acasa">Acasă</a></li>
-                    <li><a href="#despre">Despre noi</a></li>
-                    <li><a href="#meniu">Meniu</a></li>
-                    <li><a href="#pizza">Pizza</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre noi</a></li>
+                    <li><a href="meniu.html">Meniu</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li>
-                        <a href="#cos" class="cart-icon">
+                        <a href="cos.html" class="cart-icon">
                             🛒
                             <span class="cart-count">0</span>
                         </a>
@@ -38,57 +38,69 @@
             </div>
             <div class="specialty-grid">
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/margherita.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza Margherita</h3>
                         <p>Sos de roșii, mozzarella, busuioc proaspăt</p>
                         <div class="price">35 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza1', 'Pizza Margherita', 35.00, 'poze/margherita.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/quattro.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza Quattro Formaggi</h3>
                         <p>Mozzarella, gorgonzola, parmezan, fontina</p>
                         <div class="price">45 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza2', 'Pizza Quattro Formaggi', 45.00, 'poze/quattro.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/sunca.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza Prosciutto e Funghi</h3>
                         <p>Sos de roșii, mozzarella, șuncă, ciuperci</p>
                         <div class="price">42 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza3', 'Pizza Prosciutto e Funghi', 42.00, 'poze/sunca.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/diavola.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza Diavola</h3>
                         <p>Sos de roșii, mozzarella, salam picant, ardei iute</p>
                         <div class="price">40 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza4', 'Pizza Diavola', 40.00, 'poze/diavola.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/vegetariana.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza Vegetariană</h3>
                         <p>Sos de roșii, mozzarella, ciuperci, ardei, ceapă, măsline, porumb</p>
                         <div class="price">38 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza5', 'Pizza Vegetariană', 38.00, 'poze/vegetariana.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
                 <div class="specialty-card">
-                    <div class="specialty-img" style="background-image: url('/api/placeholder/400/300')"></div>
+                    <div class="specialty-img" style="background-image: url('poze/margherita.jpg')"></div>
                     <div class="specialty-content">
                         <h3>Pizza San Martin</h3>
                         <p>Sos de roșii, mozzarella, prosciutto crudo, rucola, parmezan</p>
                         <div class="price">48 lei</div>
-                        <a href="#" class="add-to-cart">Adaugă în coș</a>
+                        <button class="add-to-cart-btn" onclick="addToCart('pizza6', 'Pizza San Martin', 48.00, 'poze/margherita.jpg', 'Sos de roșii, mozzarella, busuioc proaspăt')">
+                            Adaugă în coș
+                        </button>
                     </div>
                 </div>
             </div>
@@ -229,6 +241,33 @@
         align-items: center;
         font-size: 12px;
     }
+
+    .add-to-cart-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #d62828;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #b51d1d;
+}
+
+.add-to-cart-btn:active {
+    transform: translateY(1px);
+}
+/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
      /* Stiluri pentru afișarea pe ecrane mici */
      @media (max-width: 768px) {
             .menu-item {
@@ -473,3 +512,115 @@
             font-size: 1rem;
         }
         </style>
+        <script>// Funcții pentru gestionarea coșului de cumpărături pe pagina pizza.html
+
+            // Funcția pentru adăugarea unui produs în coș
+            function addToCart(productId, name, price, image, description) {
+                // Obținem itemele din coș din localStorage sau inițializăm un array gol
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                
+                // Verificăm dacă produsul există deja în coș
+                const existingProductIndex = cartItems.findIndex(item => item.id === productId);
+                
+                if (existingProductIndex !== -1) {
+                    // Dacă produsul există, incrementăm cantitatea
+                    cartItems[existingProductIndex].quantity++;
+                } else {
+                    // Dacă produsul nu există, îl adăugăm cu cantitatea 1
+                    cartItems.push({
+                        id: productId,
+                        name: name,
+                        price: price,
+                        image: image,
+                        description: description,
+                        quantity: 1
+                    });
+                }
+                
+                // Salvăm coșul actualizat în localStorage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+                
+                // Actualizăm afișarea numărului de produse din coș
+                updateCartCount();
+                
+                // Afișăm un mesaj de confirmare
+                showNotification(name + ' a fost adăugat în coș!');
+            }
+            
+            // Funcția pentru actualizarea numărului de produse din coș
+            function updateCartCount() {
+                const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+                const cartCount = document.querySelector('.cart-count');
+                
+                // Calculăm numărul total de produse (suma cantităților)
+                const itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+                
+                // Actualizăm afișarea
+                if (cartCount) {
+                    cartCount.textContent = itemCount;
+                }
+            }
+            
+            // Funcția pentru afișarea notificării
+            function showNotification(message) {
+                // Verificăm dacă există deja o notificare
+                let notification = document.querySelector('.cart-notification');
+                
+                if (!notification) {
+                    // Dacă nu există, creăm una nouă
+                    notification = document.createElement('div');
+                    notification.className = 'cart-notification';
+                    document.body.appendChild(notification);
+                }
+                
+                // Setăm mesajul și stilul
+                notification.textContent = message;
+                notification.style.display = 'block';
+                
+                // Ascundem notificarea după 3 secunde
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                        notification.style.opacity = '1';
+                    }, 500);
+                }, 2500);
+            }
+            
+            // Inițializăm numărul de produse din coș când se încarcă pagina
+            document.addEventListener('DOMContentLoaded', function() {
+                updateCartCount();
+                
+                // Adăugăm stil pentru notificări
+                const style = document.createElement('style');
+                style.textContent = `
+                    .cart-notification {
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                        background-color: #d62828;
+                        color: white;
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+                        z-index: 1000;
+                        transition: opacity 0.5s;
+                    }
+                    
+                    .add-to-cart-btn {
+                        background-color: #d62828;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        padding: 8px 15px;
+                        cursor: pointer;
+                        font-weight: 500;
+                        transition: background-color 0.3s;
+                    }
+                    
+                    .add-to-cart-btn:hover {
+                        background-color: #b51d1d;
+                    }
+                `;
+                document.head.appendChild(style);
+            });</script>

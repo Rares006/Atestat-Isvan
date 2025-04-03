@@ -15,15 +15,15 @@
                     <span>Restaurantul San Martin</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#acasa">Acasă</a></li>
-                    <li><a href="#despre">Despre noi</a></li>
-                    <li><a href="#meniu">Meniu</a></li>
-                    <li><a href="#pizza">Pizza</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre noi</a></li>
+                    <li><a href="meniu.html">Meniu</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li>
-                        <a href="#cos" class="cart-icon">
+                        <a href="cos.html" class="cart-icon active">
                             🛒
-                            <span class="cart-count">0</span>
+                            <span class="cart-count" id="header-cart-count">0</span>
                         </a>
                     </li>
                 </ul>
@@ -684,7 +684,29 @@ footer {
             font-size: 1rem;
         }
 </style>
-<script>// JavaScript pentru funcționalitatea de filtrare a meniului
+<script>
+    
+    // Funcția pentru actualizarea numărului de produse din coș
+    function updateCartCount() {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        const cartCount = document.querySelector('.cart-count');
+        
+        // Calculăm numărul total de produse (suma cantităților)
+        const itemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+        
+        // Actualizăm afișarea
+        if (cartCount) {
+            cartCount.textContent = itemCount;
+        }
+    }
+    
+    
+    // Inițializăm numărul de produse din coș când se încarcă pagina
+    document.addEventListener('DOMContentLoaded', function() {
+        updateCartCount();
+        
+    });
+// JavaScript pentru funcționalitatea de filtrare a meniului
     document.addEventListener('DOMContentLoaded', function() {
         // Selectăm toate tab-urile de categorie
         const categoryTabs = document.querySelectorAll('.menu-tabs li');
